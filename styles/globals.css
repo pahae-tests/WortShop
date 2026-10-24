@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.dark,
+.dark :where(body *):not(.escapeDark, .escapeDark *) {
+  background-color: #000 !important;
+  background-image: none !important;
+  color: #040404 !important;
+  border-color: #080808 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
